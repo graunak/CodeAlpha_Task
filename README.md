@@ -16,5 +16,3 @@ This repository contains frontend development tasks completed as part of the Cod
 Portfolio: https://graunak.github.io/CodeAlpha_Portfolio/Portfolio/
 
 Submission completed.
-
-
