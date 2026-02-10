@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Image Gallery</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h2 class="title">Image Gallery</h2>
+  <div class="container">
+    <h2 class="title">My Photography</h2>
 
-  <!-- Filter buttons -->
-  <div class="filters">
-    <button onclick="filterImages('all')">All</button>
-    <button onclick="filterImages('nature')">Nature</button>
-    <button onclick="filterImages('city')">City</button>
+    <div class="filters">
+      <button class="btn active" onclick="filterImages('all')">All</button>
+      <button class="btn" onclick="filterImages('nature')">Nature</button>
+      <button class="btn" onclick="filterImages('city')">City</button>
+    </div>
+
+    <div class="gallery">
+      <div class="image-card nature" onclick="openLightbox(0)">
+        <img src="https://picsum.photos/id/1015/600/400" alt="Nature">
+      </div>
+      <div class="image-card nature" onclick="openLightbox(1)">
+        <img src="https://picsum.photos/id/1011/600/400" alt="Nature">
+      </div>
+      <div class="image-card city" onclick="openLightbox(2)">
+        <img src="https://picsum.photos/id/1012/600/400" alt="City">
+      </div>
+      <div class="image-card city" onclick="openLightbox(3)">
+        <img src="https://picsum.photos/id/1013/600/400" alt="City">
+      </div>
+      <div class="image-card nature" onclick="openLightbox(4)">
+        <img src="https://picsum.photos/id/1016/600/400" alt="Nature">
+      </div>
+      <div class="image-card city" onclick="openLightbox(5)">
+        <img src="https://picsum.photos/id/1014/600/400" alt="City">
+      </div>
+    </div>
   </div>
 
-  <!-- Gallery -->
-  <div class="gallery">
-    <img src="https://picsum.photos/id/1015/400/300" class="nature" onclick="openLightbox(0)">
-    <img src="https://picsum.photos/id/1011/400/300" class="nature" onclick="openLightbox(1)">
-    <img src="https://picsum.photos/id/1012/400/300" class="city" onclick="openLightbox(2)">
-    <img src="https://picsum.photos/id/1013/400/300" class="city" onclick="openLightbox(3)">
-  </div>
-
-  <!-- Lightbox -->
   <div class="lightbox" id="lightbox">
-    <span class="close" onclick="closeLightbox()">×</span>
-    <button class="nav prev" onclick="changeImage(-1)">❮</button>
-    <img id="lightboxImg">
-    <button class="nav next" onclick="changeImage(1)">❯</button>
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <button class="nav prev" onclick="changeImage(-1)">&#10094;</button>
+    <img id="lightboxImg" src="" alt="Preview">
+    <button class="nav next" onclick="changeImage(1)">&#10095;</button>
   </div>
 
   <script src="script.js"></script>
