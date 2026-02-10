@@ -3,61 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Portfolio | Raunak</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h2 class="logo">MyPortfolio</h2>
-    <nav>
+  <nav class="navbar">
+    <h2 class="logo">Raunak.</h2>
+    <div class="nav-links">
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
   <section id="home" class="hero">
-    <h1>Hello, I'm <span>Raunak</span></h1>
-    <p>Frontend Developer</p>
-    <button onclick="scrollToSection('projects')">View Projects</button>
-  </section>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a frontend developer with knowledge of HTML, CSS, JavaScript and basic frameworks.
-      I enjoy building responsive and user-friendly web applications.
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="card">
-        <h3>Image Gallery</h3>
-        <p>Responsive gallery with lightbox and filters.</p>
-      </div>
-      <div class="card">
-        <h3>Calculator</h3>
-        <p>Basic calculator with keyboard support.</p>
-      </div>
-      <div class="card">
-        <h3>Portfolio</h3>
-        <p>Personal portfolio website.</p>
-      </div>
+    <div class="hero-content">
+      <h3>Hello, I'm</h3>
+      <h1>Raunak</h1>
+      <p>Frontend Developer & UI Designer</p>
+      <button class="btn" onclick="scrollToSection('projects')">View My Work</button>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: example@gmail.com</p>
-    <p>LinkedIn: linkedin.com/in/username</p>
+  <section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <p class="about-text">
+      I am a passionate Frontend Developer with a strong grasp of HTML, CSS, and JavaScript. 
+      I specialize in building responsive, user-friendly web applications with modern UI designs.
+      I love solving problems and turning creative ideas into reality through code.
+    </p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="project-grid">
+      
+      <div class="card">
+        <h3>Image Gallery</h3>
+        <p>A responsive photography portfolio with category filters and a lightbox viewer.</p>
+        <a href="#" class="card-btn">View Project</a>
+      </div>
+
+      <div class="card">
+        <h3>Calculator</h3>
+        <p>A modern, dark-themed calculator with keyboard support and 3D hover effects.</p>
+        <a href="#" class="card-btn">View Project</a>
+      </div>
+
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>This personal portfolio website designed to showcase my skills and projects.</p>
+        <a href="#" class="card-btn">View Code</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-info">
+      <p>Email: example@gmail.com</p>
+      <p>LinkedIn: linkedin.com/in/raunak</p>
+      <p>Location: India</p>
+    </div>
   </section>
 
   <footer>
-    <p>© 2026 My Portfolio</p>
+    <p>&copy; 2026 Raunak. All Rights Reserved.</p>
   </footer>
 
   <script src="script.js"></script>
